@@ -1212,7 +1212,7 @@ dsp.regime.checkRegime = function(player, mob, regimeId, index, regimeType)
     end
 
     -- mobs that give no XP give no credit, unless LOW_LEVEL_REGIME is 1 in settings.lua
-    if not player:checkValorCredit(mob) and LOW_LEVEL_REGIME == 0 then
+    if not player:checkKillCredit(mob) and LOW_LEVEL_REGIME == 0 then
         return
     end
 
